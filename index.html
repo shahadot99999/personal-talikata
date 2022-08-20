@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal talikata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <h1 class="text-5xl text-center mt-6">Welcome Here
+            <span class="font-semibold text-violet-600">Personal calculation</span>!!!
+        </h1>
+    </header>
+
+    <main>
+        <!-- Your total amount  -->
+        <section class="mt-12">
+            <div class="grid grid-cols-1 gap-4 w-1/4 mx-auto text-white">
+                <div class="bg-green-400 p-8 rounded-xl">
+                    <h4 class="text-2xl">Your Current Balence</h4>
+                    <h2 class="text-5xl">$<span id="amount-total">10000</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculate Food, Rent,clothes -->
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto ">
+                <div class="bg-green-400 p-8 rounded-xl">
+
+                    <!-- food Cost Value -->
+                    <h4 class="text-2xl text-white">Sectors of expenditure</h4>
+                    <input id="cost-food" class="w-9/12 block mb-2 px-3" type="text" name="" placeholder="$ Food">
+
+                    <!-- Rent Cost Value -->
+                    <input id="rent-cost" class="w-9/12 block mb-2 px-3" type="text" name="" placeholder="$ rent">
+
+                    <!-- clothes cost Value -->
+                    <input id="clothes-cost" class="w-9/12 block mb-2 px-3" type="text" name="" placeholder="$ clothes">
+
+                    <!-- Calculate button handler  -->
+                    <button id="Calculate-button"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Calculate</button>
+
+
+                </div>
+                <!-- Total Expense Inner Text -->
+                <div class="bg-yellow-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Total Expense</h4>
+                    <h2 class="text-5xl">$<span id="toal-expense">00</span></h2>
+                </div>
+                <!-- Remaining Balance Inner Text  -->
+                <div class="bg-violet-400 p-8 rounded-xl">
+                    <h4 class="text-2xl">Remaining Balance</h4>
+                    <h2 class="text-5xl">$<span id="remaining-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Saving Account Monthly -->
+        <section class="mt-12">
+            <div class="grid grid-cols-1 gap-4 w-9/12 mx-auto ">
+                <div class="bg-teal-700 p-8 rounded-xl">
+
+                    <!-- food Cost Value -->
+                    <h4 class="text-2xl text-white">Saving Your Account </h4>
+                    <input id="saving-account" class="w-9/12 block mb-2 px-3" type="text" name=""
+                        placeholder="$ Saving Your Amount">
+
+
+                    <!-- Calculate button handler  -->
+                    <button id="saving-button"
+                        class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Calculate</button>
+
+
+                </div>
+                <!-- Total Expense Inner Text -->
+                <div class="bg-cyan-700 p-8 rounded-xl">
+                    <h4 class="text-2xl">Total Saving Amount</h4>
+                    <h2 class="text-5xl">$<span id="toal-saving-amount">00</span></h2>
+                </div>
+
+                <!-- Total your remaining balence -->
+                <div class="bg-blue-500 p-8 rounded-xl">
+                    <h4 class="text-2xl">Total Remaining Amount</h4>
+                    <h2 class="text-5xl">$<span id="toal-remaining-amount">00</span></h2>
+                </div>
+
+            </div>
+        </section>
+
+    </Main>
+
+
+    <script src="js/calculation.js"></script>
+    <script src="js/saving.js"></script>
+</body>
+
+</html>
